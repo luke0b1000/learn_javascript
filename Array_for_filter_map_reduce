@@ -12,6 +12,15 @@ for (let element of MyArray) { //DONT USE in
 ## values: element
 ## return: None / doesn't return anything
 =====================================================================
+##### for
+
+for (let i=0; i < MyArray.length; i++) {
+        element = MyArray[i];
+}
+
+## values: element, index, array
+## return: None / doesn't return anything
+=====================================================================
 ##### forEach
 
 MyArray.forEach((element, index, array) => {
