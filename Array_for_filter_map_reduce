@@ -1,0 +1,58 @@
+########## Iterating over an Array
+
+let MyArray = [1,2,3];
+
+=====================================================================
+##### for ... of
+
+for (let element of MyArray) { //DONT USE in
+        element;
+}
+
+## values: element
+## return: None / doesn't return anything
+=====================================================================
+##### forEach
+
+MyArray.forEach((element, index, array) => {
+    array[index] = element;
+});
+
+## values: element, index, array
+## return: undefined
+=====================================================================
+##### map
+
+NewArray = MyArray.map((element, index, array) => {
+    return 8 * element;
+});
+
+## values: element, index, array
+## return: NewArray with same MyArray.length
+## info: Convert elements into NewArray
+=====================================================================
+##### filter
+
+NewArray = MyArray.filter((element, index, array) => {
+    return element > 2;
+});
+
+## values: element, index, array
+## return: NewArray with elements that passed the test
+## info: Create NewArray filtering out the elements
+=====================================================================
+##### reduce
+
+NewArray = MyArray.reduce((accumulator, element, index, array) => {
+    return accumulator + current;
+},initial_value);
+
+## values: accumulator, element, index, array
+## return: A single value
+## info: Reduce to a single value based on elements
+## ** If initial_value is set:
+## **     accumulator = initial_value
+## **     current element is at index 0
+## ** Else
+## **     accumulator = index 0 element
+## **     current element is at index 1
