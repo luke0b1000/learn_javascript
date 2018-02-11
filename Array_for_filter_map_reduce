@@ -53,7 +53,7 @@ NewArray = MyArray.filter((element, index, array) => {
 ##### reduce
 
 NewArray = MyArray.reduce((accumulator, element, index, array) => {
-    return accumulator + current;
+    return accumulator + element;
 },initial_value);
 
 ## values: accumulator, element, index, array
@@ -61,7 +61,7 @@ NewArray = MyArray.reduce((accumulator, element, index, array) => {
 ## info: Reduce to a single value based on elements
 ## ** If initial_value is set:
 ## **     accumulator = initial_value
-## **     current element is at index 0
+## **     element is at index 0
 ## ** Else
 ## **     accumulator = index 0 element
-## **     current element is at index 1
+## **     element is at index 1
